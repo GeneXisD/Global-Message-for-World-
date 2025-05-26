@@ -1,0 +1,565 @@
+{"app_name":"ANECompilerService","timestamp":"2025-05-17 13:09:49.00 -0700","slice_uuid":"DCE36F1C-4C36-3B22-BD09-CDB166128E35","build_version":"1","bundleID":"com.apple.ANECompilerService","duration_ms":"38039770","share_with_app_devs":1,"is_first_party":0,"bug_type":"145","os_version":"iPhone OS 18.5 (22F76)","roots_installed":0,"name":"ANECompilerService","incident_id":"02E15404-2060-43E6-90BF-51B55ECAE22E"}
+Date/Time:        2025-05-17 02:35:47.094 -0700
+End time:         2025-05-17 13:09:46.864 -0700
+OS Version:       iPhone OS 18.5 (Build 22F76)
+Architecture:     arm64e
+Report Version:   60
+Incident Identifier: 02E15404-2060-43E6-90BF-51B55ECAE22E
+Share With Devs:  Yes
+
+Data Source:      Microstackshots
+Shared Cache:     7AA02927-8FB6-36C9-9575-8F3E4FC89632 slid base address 0x18791c000, slide 0x791c000
+
+Command:          ANECompilerService
+Path:             /System/Library/PrivateFrameworks/AppleNeuralEngine.framework/XPCServices/ANECompilerService.xpc/ANECompilerService
+Identifier:       com.apple.ANECompilerService
+Version:          ??? (1)
+Resource Coalition: "com.apple.aned"(408)
+On Behalf Of:     102 samples aned [255] (102 samples originated by mediaanalysisd-service [1931])
+Architecture:     arm64e
+Parent:           launchd [1]
+PID:              1914
+
+Event:            disk writes
+Action taken:     none
+Writes:           1073.76 MB of file backed memory dirtied over 38040 seconds (28.23 KB per second average), exceeding limit of 12.43 KB per second over 86400 seconds
+Writes limit:     1073.74 MB
+Limit duration:   86400s
+Writes caused:    1073.76 MB
+Writes duration:  38040s
+Duration:         38039.77s
+Duration Sampled: 37566.54s (event starts 473.23s before samples)
+Steps:            1603 (10.49 MB/step)
+
+Hardware model:   iPhone17,2
+Active cpus:      6
+Memory size:      7.45 GB
+HW page size:     16384
+VM page size:     16384
+Shared cache residency: 16.94% (832.84 MB / 4915.94 MB)
+
+Advisory levels:  Battery -> 3, User -> 3, ThermalPressure -> 0, Combined -> 3
+Free disk space:  917.35 GB/953.14 GB, low space threshold 150 MB
+Vnodes Available: 61.11% (17112/28000, 14000 allocated, 14000 soft limit)
+Models:           none
+
+Preferred User Language: en-US
+Country Code:     US
+Keyboards:        en_US QWERTY
+OS Cryptex File Extents: 1
+
+Heaviest stack for the target process:
+  102  ??? (libsystem_pthread.dylib + 2732) [0x214bccaac]
+  102  ??? (libsystem_pthread.dylib + 2572) [0x214bcca0c]
+  102  ??? (libdispatch.dylib + 84576) [0x192443a60]
+  102  ??? (libdispatch.dylib + 86492) [0x1924441dc]
+  102  ??? (libdispatch.dylib + 44512) [0x192439de0]
+  102  ??? (libdispatch.dylib + 41272) [0x192439138]
+  102  ??? (libdispatch.dylib + 125812) [0x19244db74]
+  102  ??? (libdispatch.dylib + 41272) [0x192439138]
+  102  ??? (libdispatch.dylib + 122384) [0x19244ce10]
+  102  ??? (libdispatch.dylib + 112076) [0x19244a5cc]
+  102  ??? (libxpc.dylib + 79180) [0x214c2a54c]
+  102  ??? (libxpc.dylib + 72040) [0x214c28968]
+  102  ??? (Foundation + 106376) [0x189138f88]
+  102  ??? (Foundation + 106728) [0x1891390e8]
+  102  ??? (Foundation + 108132) [0x189139664]
+  102  ??? (Foundation + 161032) [0x189146508]
+  102  ??? (CoreFoundation + 192780) [0x18a4d410c]
+  102  ??? (CoreFoundation + 195220) [0x18a4d4a94]
+  102  ??? (ANECompilerService + 174664) [0x102eb6a48]
+  102  ??? (libdispatch.dylib + 71464) [0x192440728]
+  102  ??? (libdispatch.dylib + 112004) [0x19244a584]
+  83   ??? (ANECompilerService + 176316) [0x102eb70bc]
+  76   ??? (ANECompilerService + 172292) [0x102eb6104]
+  76   ??? (ANECompilerService + 166244) [0x102eb4964]
+  68   ??? (ANECompiler + 2545100) [0x2186c85cc]
+  67   ??? (ANECompiler + 1783772) [0x21860e7dc]
+  67   ??? (ANECompiler + 5395116) [0x2189802ac]
+  67   ??? (ANECompiler + 7049672) [0x218b141c8]
+  67   ??? (ANECompiler + 7051828) [0x218b14a34]
+  67   ??? (ANECompiler + 68564) [0x21846bbd4]
+  67   ??? (ANECompiler + 69148) [0x21846be1c]
+  67   ??? (ANECompiler + 148528) [0x21847f430]
+  67   ??? (ANECompiler + 149892) [0x21847f984]
+  67   ??? (ANECompiler + 7060604) [0x218b16c7c]
+  67   ??? (ANECompiler + 7198404) [0x218b386c4]
+  67   ??? (ANECompiler + 7181664) [0x218b34560]
+  67   ??? (ANECompiler + 7513864) [0x218b85708]
+  67   ??? (ANECompiler + 5096992) [0x218937620]
+  31   ??? (ANECompiler + 5098792) [0x218937d28]
+
+
+Powerstats for:   ANECompilerService [1914]
+UUID:             DCE36F1C-4C36-3B22-BD09-CDB166128E35
+Path:             /System/Library/PrivateFrameworks/AppleNeuralEngine.framework/XPCServices/ANECompilerService.xpc/ANECompilerService
+Identifier:       com.apple.ANECompilerService
+Version:          ??? (1)
+Resource Coalition: 102 samples "com.apple.aned"(408)
+On Behalf Of:     102 samples aned [255] (102 samples originated by mediaanalysisd-service [1931])
+Architecture:     arm64e
+Parent:           launchd [1]
+UID:              501
+Sudden Term:      Tracked (allows idle exit)
+Footprint:        5280 KB -> 3824 KB (-1456 KB) (max 46.64 MB )
+Pageins:          51988 pages
+Start time:       2025-05-17 13:06:14.047 -0700
+End time:         2025-05-17 13:09:46.864 -0700
+Num samples:      102 (6%)
+Num threads:      8
+Primary state:    102 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Background, Requested Thread QoS Background, Override Thread QoS Unspecified, e-core
+User Activity:    102 samples Idle, 0 samples Active
+Power Source:     0 samples on Battery, 102 samples on AC
+  102  ??? (libsystem_pthread.dylib + 2732) [0x214bccaac]
+    102  ??? (libsystem_pthread.dylib + 2572) [0x214bcca0c]
+      102  ??? (libdispatch.dylib + 84576) [0x192443a60]
+        102  ??? (libdispatch.dylib + 86492) [0x1924441dc]
+          102  ??? (libdispatch.dylib + 44512) [0x192439de0]
+            102  ??? (libdispatch.dylib + 41272) [0x192439138]
+              102  ??? (libdispatch.dylib + 125812) [0x19244db74]
+                102  ??? (libdispatch.dylib + 41272) [0x192439138]
+                  102  ??? (libdispatch.dylib + 122384) [0x19244ce10]
+                    102  ??? (libdispatch.dylib + 112076) [0x19244a5cc]
+                      102  ??? (libxpc.dylib + 79180) [0x214c2a54c]
+                        102  ??? (libxpc.dylib + 72040) [0x214c28968]
+                          102  ??? (Foundation + 106376) [0x189138f88]
+                            102  ??? (Foundation + 106728) [0x1891390e8]
+                              102  ??? (Foundation + 108132) [0x189139664]
+                                102  ??? (Foundation + 161032) [0x189146508]
+                                  102  ??? (CoreFoundation + 192780) [0x18a4d410c]
+                                    102  ??? (CoreFoundation + 195220) [0x18a4d4a94]
+                                      102  ??? (ANECompilerService + 174664) [0x102eb6a48]
+                                        102  ??? (libdispatch.dylib + 71464) [0x192440728]
+                                          102  ??? (libdispatch.dylib + 112004) [0x19244a584]
+                                            83   ??? (ANECompilerService + 176316) [0x102eb70bc]
+                                              76   ??? (ANECompilerService + 172292) [0x102eb6104]
+                                                76   ??? (ANECompilerService + 166244) [0x102eb4964]
+                                                  68   ??? (ANECompiler + 2545100) [0x2186c85cc]
+                                                    67   ??? (ANECompiler + 1783772) [0x21860e7dc]
+                                                      67   ??? (ANECompiler + 5395116) [0x2189802ac]
+                                                        67   ??? (ANECompiler + 7049672) [0x218b141c8]
+                                                          67   ??? (ANECompiler + 7051828) [0x218b14a34]
+                                                            67   ??? (ANECompiler + 68564) [0x21846bbd4]
+                                                              67   ??? (ANECompiler + 69148) [0x21846be1c]
+                                                                67   ??? (ANECompiler + 148528) [0x21847f430]
+                                                                  67   ??? (ANECompiler + 149892) [0x21847f984]
+                                                                    67   ??? (ANECompiler + 7060604) [0x218b16c7c]
+                                                                      67   ??? (ANECompiler + 7198404) [0x218b386c4]
+                                                                        67   ??? (ANECompiler + 7181664) [0x218b34560]
+                                                                          67   ??? (ANECompiler + 7513864) [0x218b85708]
+                                                                            67   ??? (ANECompiler + 5096992) [0x218937620]
+                                                                              31   ??? (ANECompiler + 5098792) [0x218937d28]
+                                                                                31   <on behalf of aned [255] (originated by mediaanalysisd-service [1931])>
+                                                                              30   ??? (ANECompiler + 5099224) [0x218937ed8]
+                                                                                30   ??? (ANECompiler + 3665016) [0x2187d9c78]
+                                                                                  30   ??? (ANECompiler + 3665116) [0x2187d9cdc]
+                                                                                    30   ??? (ANECompiler + 3665372) [0x2187d9ddc]
+                                                                                      30   ??? (libsystem_platform.dylib + 2824) [0x214b21b08]
+                                                                                        30   <on behalf of aned [255] (originated by mediaanalysisd-service [1931])>
+                                                                              6    ??? (ANECompiler + 5099060) [0x218937e34]
+                                                                                6    <on behalf of aned [255] (originated by mediaanalysisd-service [1931])>
+                                                    1    ??? (ANECompiler + 1783728) [0x21860e7b0]
+                                                      1    ??? (ANECompiler + 5394716) [0x21898011c]
+                                                        1    ??? (ANECompiler + 2740560) [0x2186f8150]
+                                                          1    ??? (ANECompiler + 68564) [0x21846bbd4]
+                                                            1    ??? (ANECompiler + 69148) [0x21846be1c]
+                                                              1    ??? (ANECompiler + 148528) [0x21847f430]
+                                                                1    ??? (ANECompiler + 149892) [0x21847f984]
+                                                                  1    ??? (ANECompiler + 3920420) [0x218818224]
+                                                                    1    ??? (ANECompiler + 7522300) [0x218b877fc]
+                                                                      1    ??? (ANECompiler + 7330280) [0x218b589e8]
+                                                                        1    ??? (ANECompiler + 7316384) [0x218b553a0]
+                                                                          1    ??? (ANECompiler + 1679768) [0x2185f5198]
+                                                                            1    ??? (ANECompiler + 1679868) [0x2185f51fc]
+                                                                              1    ??? (ANECompiler + 1400636) [0x2185b0f3c]
+                                                                                1    ??? (libsystem_platform.dylib + 3184) [0x214b21c70]
+                                                                                  1    <on behalf of aned [255] (originated by mediaanalysisd-service [1931])>
+                                                  8    ??? (ANECompiler + 2546668) [0x2186c8bec]
+                                                    7    ??? (ANECompiler + 2550180) [0x2186c99a4]
+                                                      6    ??? (ANECompiler + 2557472) [0x2186cb620]
+                                                        5    ??? (ANECompiler + 6212936) [0x218a47d48]
+                                                          5    ??? (libsystem_c.dylib + 45528) [0x1924801d8]
+                                                            5    ??? (libsystem_c.dylib + 18720) [0x192479920]
+                                                              5    ??? (libsystem_c.dylib + 81568) [0x192488ea0]
+                                                                5    ??? (libsystem_kernel.dylib + 29168) [0x1db6ca1f0]
+                                                                  5    <on behalf of aned [255] (originated by mediaanalysisd-service [1931])>
+                                                        1    ??? (ANECompiler + 6212908) [0x218a47d2c]
+                                                          1    ??? (libsystem_c.dylib + 84060) [0x19248985c]
+                                                            1    ??? (libsystem_c.dylib + 84856) [0x192489b78]
+                                                              1    ??? (libsystem_c.dylib + 44956) [0x19247ff9c]
+                                                                1    ??? (libsystem_c.dylib + 81568) [0x192488ea0]
+                                                                  1    ??? (libsystem_kernel.dylib + 29168) [0x1db6ca1f0]
+                                                                    1    <on behalf of aned [255] (originated by mediaanalysisd-service [1931])>
+                                                      1    ??? (ANECompiler + 2557380) [0x2186cb5c4]
+                                                        1    ??? (ANECompiler + 3315820) [0x21878486c]
+                                                          1    ??? (ANECompiler + 3313152) [0x218783e00]
+                                                            1    ??? (ANECompiler + 3312512) [0x218783b80]
+                                                              1    ??? (ANECompiler + 3311908) [0x218783924]
+                                                                1    ??? (ANECompiler + 3309384) [0x218782f48]
+                                                                  1    ??? (ANECompiler + 3348164) [0x21878c6c4]
+                                                                    1    ??? (ANECompiler + 3348992) [0x21878ca00]
+                                                                      1    <on behalf of aned [255] (originated by mediaanalysisd-service [1931])>
+                                                    1    ??? (ANECompiler + 2549976) [0x2186c98d8]
+                                                      1    ??? (ANECompiler + 6212808) [0x218a47cc8]
+                                                        1    ??? (ANECompiler + 3266204) [0x21877869c]
+                                                          1    ??? (ANECompiler + 7113664) [0x218b23bc0]
+                                                            1    ??? (libsystem_c.dylib + 45528) [0x1924801d8]
+                                                              1    ??? (libsystem_c.dylib + 18488) [0x192479838]
+                                                                1    ??? (libsystem_c.dylib + 44956) [0x19247ff9c]
+                                                                  1    ??? (libsystem_c.dylib + 81568) [0x192488ea0]
+                                                                    1    ??? (libsystem_kernel.dylib + 29168) [0x1db6ca1f0]
+                                                                      1    <on behalf of aned [255] (originated by mediaanalysisd-service [1931])>
+                                              7    ??? (ANECompilerService + 171556) [0x102eb5e24]
+                                                7    ??? (ANECompilerService + 154704) [0x102eb1c50]
+                                                  7    ??? (Espresso + 7008936) [0x19a3932a8]
+                                                    7    ??? (Espresso + 8069592) [0x19a4961d8]
+                                                      7    ??? (Espresso + 720688) [0x199d93f30]
+                                                        7    ??? (Espresso + 723596) [0x199d94a8c]
+                                                          7    ??? (Espresso + 8081412) [0x19a499004]
+                                                            7    ??? (Espresso + 8083560) [0x19a499868]
+                                                              7    ??? (Espresso + 726032) [0x199d95410]
+                                                                7    ??? (Espresso + 8033840) [0x19a48d630]
+                                                                  5    ??? (Espresso + 6705160) [0x19a349008]
+                                                                    4    ??? (Espresso + 6723140) [0x19a34d644]
+                                                                      1    ??? (Espresso + 6734656) [0x19a350340]
+                                                                        1    ??? (Espresso + 8064668) [0x19a494e9c]
+                                                                          1    ??? (libsystem_c.dylib + 45528) [0x1924801d8]
+                                                                            1    ??? (libsystem_c.dylib + 18720) [0x192479920]
+                                                                              1    ??? (libsystem_c.dylib + 81568) [0x192488ea0]
+                                                                                1    ??? (libsystem_kernel.dylib + 29168) [0x1db6ca1f0]
+                                                                                  1    <on behalf of aned [255] (originated by mediaanalysisd-service [1931])>
+                                                                      1    ??? (Espresso + 6734568) [0x19a3502e8]
+                                                                        1    ??? (Espresso + 6742384) [0x19a352170]
+                                                                          1    ??? (Espresso + 8064668) [0x19a494e9c]
+                                                                            1    ??? (libsystem_c.dylib + 45528) [0x1924801d8]
+                                                                              1    ??? (libsystem_c.dylib + 18720) [0x192479920]
+                                                                                1    ??? (libsystem_c.dylib + 81568) [0x192488ea0]
+                                                                                  1    ??? (libsystem_kernel.dylib + 29168) [0x1db6ca1f0]
+                                                                                    1    <on behalf of aned [255] (originated by mediaanalysisd-service [1931])>
+                                                                      1    ??? (Espresso + 6734100) [0x19a350114]
+                                                                        1    ??? (Espresso + 6742384) [0x19a352170]
+                                                                          1    ??? (Espresso + 8064668) [0x19a494e9c]
+                                                                            1    ??? (libsystem_c.dylib + 45528) [0x1924801d8]
+                                                                              1    ??? (libsystem_c.dylib + 18720) [0x192479920]
+                                                                                1    ??? (libsystem_c.dylib + 81568) [0x192488ea0]
+                                                                                  1    ??? (libsystem_kernel.dylib + 29168) [0x1db6ca1f0]
+                                                                                    1    <on behalf of aned [255] (originated by mediaanalysisd-service [1931])>
+                                                                      1    ??? (Espresso + 6733032) [0x19a34fce8]
+                                                                        1    ??? (Espresso + 10697852) [0x19a717c7c]
+                                                                          1    ??? (Espresso + 7892560) [0x19a46ae50]
+                                                                            1    ??? (Espresso + 6743284) [0x19a3524f4]
+                                                                              1    ??? (Espresso + 8064668) [0x19a494e9c]
+                                                                                1    ??? (libsystem_c.dylib + 45528) [0x1924801d8]
+                                                                                  1    ??? (libsystem_c.dylib + 18488) [0x192479838]
+                                                                                    1    ??? (libsystem_c.dylib + 44956) [0x19247ff9c]
+                                                                                      1    ??? (libsystem_c.dylib + 81568) [0x192488ea0]
+                                                                                        1    ??? (libsystem_kernel.dylib + 29168) [0x1db6ca1f0]
+                                                                                          1    <on behalf of aned [255] (originated by mediaanalysisd-service [1931])>
+                                                                    1    ??? (Espresso + 6722380) [0x19a34d34c]
+                                                                      1    ??? (Espresso + 8064668) [0x19a494e9c]
+                                                                        1    ??? (libsystem_c.dylib + 45528) [0x1924801d8]
+                                                                          1    ??? (libsystem_c.dylib + 18488) [0x192479838]
+                                                                            1    ??? (libsystem_c.dylib + 44956) [0x19247ff9c]
+                                                                              1    ??? (libsystem_c.dylib + 81568) [0x192488ea0]
+                                                                                1    ??? (libsystem_kernel.dylib + 29168) [0x1db6ca1f0]
+                                                                                  1    <on behalf of aned [255] (originated by mediaanalysisd-service [1931])>
+                                                                  2    ??? (Espresso + 10732424) [0x19a720388]
+                                                                    2    ??? (Espresso + 10734592) [0x19a720c00]
+                                                                      2    ??? (Espresso + 8064668) [0x19a494e9c]
+                                                                        2    ??? (libsystem_c.dylib + 45528) [0x1924801d8]
+                                                                          2    ??? (libsystem_c.dylib + 18720) [0x192479920]
+                                                                            2    ??? (libsystem_c.dylib + 81568) [0x192488ea0]
+                                                                              2    ??? (libsystem_kernel.dylib + 29168) [0x1db6ca1f0]
+                                                                                2    <on behalf of aned [255] (originated by mediaanalysisd-service [1931])>
+                                            15   ??? (ANECompilerService + 176108) [0x102eb6fec]
+                                              15   ??? (ANECompilerService + 149812) [0x102eb0934]
+                                                15   ??? (ANECompilerService + 166244) [0x102eb4964]
+                                                  6    ??? (ANECompiler + 2546668) [0x2186c8bec]
+                                                    4    ??? (ANECompiler + 2550180) [0x2186c99a4]
+                                                      4    ??? (ANECompiler + 2557472) [0x2186cb620]
+                                                        4    ??? (ANECompiler + 6212908) [0x218a47d2c]
+                                                          4    ??? (libsystem_c.dylib + 84060) [0x19248985c]
+                                                            4    ??? (libsystem_c.dylib + 84856) [0x192489b78]
+                                                              4    ??? (libsystem_c.dylib + 44956) [0x19247ff9c]
+                                                                4    ??? (libsystem_c.dylib + 81568) [0x192488ea0]
+                                                                  4    ??? (libsystem_kernel.dylib + 29168) [0x1db6ca1f0]
+                                                                    4    <on behalf of aned [255] (originated by mediaanalysisd-service [1931])>
+                                                    2    ??? (ANECompiler + 2549976) [0x2186c98d8]
+                                                      2    ??? (ANECompiler + 6212808) [0x218a47cc8]
+                                                        2    ??? (ANECompiler + 3266556) [0x2187787fc]
+                                                          2    ??? (ANECompiler + 2744580) [0x2186f9104]
+                                                            2    ??? (libsystem_c.dylib + 45528) [0x1924801d8]
+                                                              2    ??? (libsystem_c.dylib + 18720) [0x192479920]
+                                                                2    ??? (libsystem_c.dylib + 81568) [0x192488ea0]
+                                                                  2    ??? (libsystem_kernel.dylib + 29168) [0x1db6ca1f0]
+                                                                    2    <on behalf of aned [255] (originated by mediaanalysisd-service [1931])>
+                                                  5    ??? (ANECompiler + 2545100) [0x2186c85cc]
+                                                    5    ??? (ANECompiler + 1783472) [0x21860e6b0]
+                                                      5    ??? (ANECompiler + 1779456) [0x21860d700]
+                                                        5    ??? (ANECompiler + 2897464) [0x21871e638]
+                                                          5    ??? (ANECompiler + 2899360) [0x21871eda0]
+                                                            5    ??? (ANECompiler + 2904304) [0x2187200f0]
+                                                              5    ??? (ANECompiler + 2909568) [0x218721580]
+                                                                5    ??? (ANECompiler + 1941872) [0x218635170]
+                                                                  5    ??? (ANECompiler + 53396) [0x218468094]
+                                                                    5    ??? (ANECompiler + 52780) [0x218467e2c]
+                                                                      5    ??? (ANECompiler + 97784) [0x218472df8]
+                                                                        5    ??? (ANECompiler + 1679768) [0x2185f5198]
+                                                                          5    ??? (ANECompiler + 1679868) [0x2185f51fc]
+                                                                            5    ??? (ANECompiler + 1400636) [0x2185b0f3c]
+                                                                              4    ??? (libsystem_platform.dylib + 2824) [0x214b21b08]
+                                                                                4    <on behalf of aned [255] (originated by mediaanalysisd-service [1931])>
+                                                                              1    ??? (libsystem_platform.dylib + 3184) [0x214b21c70]
+                                                                                1    <on behalf of aned [255] (originated by mediaanalysisd-service [1931])>
+                                                  4    ??? (ANECompiler + 2543548) [0x2186c7fbc]
+                                                    4    ??? (ANECompiler + 2541800) [0x2186c78e8]
+                                                      4    ??? (ANECompiler + 17773724) [0x21954e49c]
+                                                        4    ??? (ANECompiler + 17776420) [0x21954ef24]
+                                                          4    ??? (ANECompiler + 17779564) [0x21954fb6c]
+                                                            4    ??? (ANECompiler + 17665656) [0x219533e78]
+                                                              4    ??? (ANECompiler + 17654736) [0x2195313d0]
+                                                                2    ??? (ANECompiler + 17606676) [0x219525814]
+                                                                  2    ??? (ANECompiler + 17622640) [0x219529670]
+                                                                    2    ??? (ANECompiler + 17471132) [0x21950469c]
+                                                                      2    ??? (ANECompiler + 17471324) [0x21950475c]
+                                                                        2    ??? (libsystem_c.dylib + 45528) [0x1924801d8]
+                                                                          2    ??? (libsystem_c.dylib + 18488) [0x192479838]
+                                                                            2    ??? (libsystem_c.dylib + 44956) [0x19247ff9c]
+                                                                              2    ??? (libsystem_c.dylib + 81568) [0x192488ea0]
+                                                                                2    ??? (libsystem_kernel.dylib + 29168) [0x1db6ca1f0]
+                                                                                  2    <on behalf of aned [255] (originated by mediaanalysisd-service [1931])>
+                                                                2    ??? (ANECompiler + 17600736) [0x2195240e0]
+                                                                  2    ??? (ANECompiler + 17426304) [0x2194f9780]
+                                                                    2    ??? (ANECompiler + 17820028) [0x21955997c]
+                                                                      2    ??? (ANECompiler + 17816520) [0x219558bc8]
+                                                                        2    ??? (ANECompiler + 17867772) [0x2195653fc]
+                                                                          2    ??? (ANECompiler + 17803748) [0x2195559e4]
+                                                                            2    ??? (ANECompiler + 17803996) [0x219555adc]
+                                                                              2    ??? (libsystem_c.dylib + 45528) [0x1924801d8]
+                                                                                2    ??? (libsystem_c.dylib + 18488) [0x192479838]
+                                                                                  2    ??? (libsystem_c.dylib + 44956) [0x19247ff9c]
+                                                                                    2    ??? (libsystem_c.dylib + 81568) [0x192488ea0]
+                                                                                      2    ??? (libsystem_kernel.dylib + 29168) [0x1db6ca1f0]
+                                                                                        2    <on behalf of aned [255] (originated by mediaanalysisd-service [1931])>
+                                            4    ??? (ANECompilerService + 175496) [0x102eb6d88]
+                                              4    ??? (ANECompilerService + 97608) [0x102ea3d48]
+                                                4    ??? (libcopyfile.dylib + 9584) [0x214ad0570]
+                                                  4    ??? (libcopyfile.dylib + 10428) [0x214ad08bc]
+                                                    4    ??? (libcopyfile.dylib + 11112) [0x214ad0b68]
+                                                      4    ??? (libsystem_kernel.dylib + 20680) [0x1db6c80c8]
+                                                        4    <on behalf of aned [255] (originated by mediaanalysisd-service [1931])>
+
+  Binary Images:
+           0x102e8c000 -                ???  com.apple.ANECompilerService (1) <DCE36F1C-4C36-3B22-BD09-CDB166128E35>  /System/Library/PrivateFrameworks/AppleNeuralEngine.framework/XPCServices/ANECompilerService.xpc/ANECompilerService
+           0x18911f000 -        0x189d92ddf  Foundation                       <34DE055D-8683-380A-9198-C3347211D13D>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x18a4a5000 -        0x18aa21fff  CoreFoundation                   <7821F73C-378B-3A10-BE90-EF526B7DBA93>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x19242f000 -        0x192474b1f  libdispatch.dylib                <395DA84F-715D-334E-8D41-A16CD93FC83C>  /usr/lib/system/libdispatch.dylib
+           0x192475000 -        0x1924f48ef  libsystem_c.dylib                <93F93D7C-245F-3395-822D-EC61FFAE79CF>  /usr/lib/system/libsystem_c.dylib
+           0x199ce4000 -        0x19aba61ff  Espresso                         <E2BC04E6-4733-3906-A5C6-238AFC3A7FEA>  /System/Library/PrivateFrameworks/Espresso.framework/Espresso
+           0x1db6c3000 -        0x1db6fcebf  libsystem_kernel.dylib           <9E195BE1-1733-345E-A9BF-50D0D7059647>  /usr/lib/system/libsystem_kernel.dylib
+           0x214ace000 -        0x214ad80d7  libcopyfile.dylib                <675716DC-E2FE-3850-9BE6-C8D0B0B7C278>  /usr/lib/system/libcopyfile.dylib
+           0x214b21000 -        0x214b2860f  libsystem_platform.dylib         <2FEF24DE-6723-3799-A5C5-9E3DF1CD2600>  /usr/lib/system/libsystem_platform.dylib
+           0x214bcc000 -        0x214bd83f3  libsystem_pthread.dylib          <B37430D8-E3AF-33E4-81E1-FAED9EE26E8A>  /usr/lib/system/libsystem_pthread.dylib
+           0x214c17000 -        0x214c5edbf  libxpc.dylib                     <A46C2755-9586-33B8-9EA9-377F71175516>  /usr/lib/system/libxpc.dylib
+           0x21845b000 -        0x2197eb23f  ANECompiler                      <6301A139-AA80-3832-B62E-AC74EC6A749E>  /System/Library/PrivateFrameworks/ANECompiler.framework/ANECompiler
+
+
+Powerstats for:   mediaplaybackd
+UUID:             DD1542C1-E9AA-3FAF-A616-72E1AD1DF830
+Path:             /usr/libexec/mediaplaybackd
+Resource Coalition: 155 samples "com.apple.mediaplaybackd"(558)
+On Behalf Of:     155 samples UNKNOWN [464, 823] (78 samples originated by UNKNOWN [31, 80], 74 samples originated by cloudphotod [379], 3 samples originated by MobileSafari [820])
+Architecture:     arm64e
+Start time:       2025-05-17 05:05:59.220 -0700
+End time:         2025-05-17 08:44:19.055 -0700
+Num samples:      155 (10%)
+Primary state:    152 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Utility, Requested Thread QoS Utility, Override Thread QoS Unspecified, e-core
+User Activity:    51 samples Idle, 104 samples Active
+Power Source:     119 samples on Battery, 36 samples on AC
+  95   ??? (libsystem_pthread.dylib + 2744) [0x214bccab8]
+    95   ??? (libsystem_pthread.dylib + 13124) [0x214bcf344]
+      94   ??? (CoreMedia + 357512) [0x1978cb488]
+        89   ??? (MediaToolbox + 368384) [0x19ba6af00]
+          89   ??? (MediaToolbox + 523664) [0x19ba90d90]
+            89   ??? (MediaToolbox + 9894648) [0x19c380af8]
+              89   ??? (MediaToolbox + 9894948) [0x19c380c24]
+                89   ??? (MediaToolbox + 9895648) [0x19c380ee0]
+                  89   ??? (CoreMedia + 999800) [0x197968178]
+                    89   ??? (libsystem_kernel.dylib + 85800) [0x1db6d7f28]
+                      36   <on behalf of UNKNOWN [464] (originated by UNKNOWN [31])>
+                      34   <on behalf of UNKNOWN [464] (originated by cloudphotod [379])>
+                      17   <on behalf of UNKNOWN [464] (originated by UNKNOWN [80])>
+                      2    <on behalf of UNKNOWN [464] (originated by UNKNOWN [31]), p-core>
+        5    ??? (MediaToolbox + 368224) [0x19ba6ae60]
+          5    ??? (MediaToolbox + 371356) [0x19ba6ba9c]
+            5    ??? (MediaToolbox + 8705644) [0x19c25e66c]
+              5    ??? (MediaToolbox + 373480) [0x19ba6c2e8]
+                4    ??? (MediaToolbox + 523884) [0x19ba90e6c]
+                  4    ??? (MediaToolbox + 4042280) [0x19bdebe28]
+                    4    ??? (MediaToolbox + 9893680) [0x19c380730]
+                      4    ??? (MediaToolbox + 9894948) [0x19c380c24]
+                        4    ??? (MediaToolbox + 9895648) [0x19c380ee0]
+                          4    ??? (CoreMedia + 999800) [0x197968178]
+                            4    ??? (libsystem_kernel.dylib + 85800) [0x1db6d7f28]
+                              4    <on behalf of UNKNOWN [464] (originated by UNKNOWN [31])>
+                1    ??? (MediaToolbox + 523832) [0x19ba90e38]
+                  1    ??? (MediaToolbox + 7516292) [0x19c13c084]
+                    1    ??? (MediaToolbox + 7516952) [0x19c13c318]
+                      1    ??? (CoreMedia + 997216) [0x197967760]
+                        1    ??? (CoreMedia + 996596) [0x1979674f4]
+                          1    ??? (CoreMedia + 41236) [0x19787e114]
+                            1    ??? (CoreMedia + 324656) [0x1978c3430]
+                              1    ??? (libsystem_kernel.dylib + 27552) [0x1db6c9ba0]
+                                1    <on behalf of UNKNOWN [464] (originated by UNKNOWN [80])>
+      1    ??? (libdispatch.dylib + 80752) [0x192442b70]
+        1    ??? (libdispatch.dylib + 81328) [0x192442db0]
+          1    ??? (libdispatch.dylib + 44512) [0x192439de0]
+            1    ??? (libdispatch.dylib + 41884) [0x19243939c]
+              1    ??? (libdispatch.dylib + 112004) [0x19244a584]
+                1    ??? (MediaToolbox + 4132756) [0x19be01f94]
+                  1    ??? (MediaToolbox + 4133316) [0x19be021c4]
+                    1    ??? (MediaToolbox + 4145984) [0x19be05340]
+                      1    ??? (MediaToolbox + 9169524) [0x19c2cfa74]
+                        1    ??? (MediaToolbox + 3137772) [0x19bd0f0ec]
+                          1    ??? (MediaToolbox + 3128912) [0x19bd0ce50]
+                            1    ??? (MediaToolbox + 9164184) [0x19c2ce598]
+                              1    ??? (MediaToolbox + 3130044) [0x19bd0d2bc]
+                                1    ??? (libsystem_c.dylib + 77864) [0x192488028]
+                                  1    ??? (libsystem_c.dylib + 49628) [0x1924811dc]
+                                    1    ??? (libsystem_c.dylib + 70584) [0x1924863b8]
+                                      1    ??? (libsystem_kernel.dylib + 36284) [0x1db6cbdbc]
+                                        1    <on behalf of UNKNOWN [823] (originated by MobileSafari [820]), Effective Thread QoS Unspecified, Requested Thread QoS Unspecified, p-core>
+  60   ??? (libsystem_pthread.dylib + 2732) [0x214bccaac]
+    60   ??? (libsystem_pthread.dylib + 2572) [0x214bcca0c]
+      60   ??? (libdispatch.dylib + 84576) [0x192443a60]
+        60   ??? (libdispatch.dylib + 86492) [0x1924441dc]
+          58   ??? (libdispatch.dylib + 44460) [0x192439dac]
+            58   ??? (libdispatch.dylib + 41680) [0x1924392d0]
+              58   ??? (libdispatch.dylib + 112004) [0x19244a584]
+                58   ??? (CoreMedia + 134552) [0x197894d98]
+                  58   ??? (CoreMedia + 133756) [0x197894a7c]
+                    58   ??? (CoreMedia + 133888) [0x197894b00]
+                      35   ??? (MediaToolbox + 8518692) [0x19c230c24]
+                        35   ??? (MediaToolbox + 2132208) [0x19bc198f0]
+                          35   ??? (CoreMedia + 997000) [0x197967688]
+                            35   ??? (CoreMedia + 41236) [0x19787e114]
+                              35   ??? (CoreMedia + 324656) [0x1978c3430]
+                                35   ??? (libsystem_kernel.dylib + 27552) [0x1db6c9ba0]
+                                  23   <on behalf of UNKNOWN [464] (originated by cloudphotod [379])>
+                                  12   <on behalf of UNKNOWN [464] (originated by UNKNOWN [80])>
+                      23   ??? (MediaToolbox + 2126048) [0x19bc180e0]
+                        23   ??? (MediaToolbox + 2132208) [0x19bc198f0]
+                          23   ??? (CoreMedia + 997000) [0x197967688]
+                            23   ??? (CoreMedia + 41236) [0x19787e114]
+                              23   ??? (CoreMedia + 324656) [0x1978c3430]
+                                23   ??? (libsystem_kernel.dylib + 27552) [0x1db6c9ba0]
+                                  17   <on behalf of UNKNOWN [464] (originated by cloudphotod [379])>
+                                  6    <on behalf of UNKNOWN [464] (originated by UNKNOWN [80])>
+          2    ??? (libdispatch.dylib + 49392) [0x19243b0f0]
+            2    ??? (libdispatch.dylib + 44512) [0x192439de0]
+              2    ??? (libdispatch.dylib + 41680) [0x1924392d0]
+                2    ??? (libdispatch.dylib + 112004) [0x19244a584]
+                  2    ??? (CoreMedia + 292460) [0x1978bb66c]
+                    2    ??? (MediaToolbox + 9873156) [0x19c37b704]
+                      2    ??? (MediaToolbox + 221980) [0x19ba4731c]
+                        2    ??? (MediaToolbox + 229908) [0x19ba49214]
+                          2    ??? (MediaToolbox + 235556) [0x19ba4a824]
+                            2    ??? (MediaToolbox + 231628) [0x19ba498cc]
+                              2    ??? (libsystem_kernel.dylib + 27552) [0x1db6c9ba0]
+                                1    <on behalf of UNKNOWN [823] (originated by MobileSafari [820]), Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+                                1    <on behalf of UNKNOWN [823] (originated by MobileSafari [820]), Effective Thread QoS Unspecified, Requested Thread QoS Unspecified, p-core>
+
+  Binary Images:
+           0x102390000 -                ???  mediaplaybackd          <DD1542C1-E9AA-3FAF-A616-72E1AD1DF830>  /usr/libexec/mediaplaybackd
+           0x19242f000 -        0x192474b1f  libdispatch.dylib       <395DA84F-715D-334E-8D41-A16CD93FC83C>  /usr/lib/system/libdispatch.dylib
+           0x192475000 -        0x1924f48ef  libsystem_c.dylib       <93F93D7C-245F-3395-822D-EC61FFAE79CF>  /usr/lib/system/libsystem_c.dylib
+           0x197874000 -        0x1979fb8df  CoreMedia               <564632CC-7346-3E60-82E3-DC1F1DD8AA1D>  /System/Library/Frameworks/CoreMedia.framework/CoreMedia
+           0x19ba11000 -        0x19c5687ff  MediaToolbox            <AB6C3025-2CC6-347B-AF79-D9689FA081B1>  /System/Library/Frameworks/MediaToolbox.framework/MediaToolbox
+           0x1db6c3000 -        0x1db6fcebf  libsystem_kernel.dylib  <9E195BE1-1733-345E-A9BF-50D0D7059647>  /usr/lib/system/libsystem_kernel.dylib
+           0x214bcc000 -        0x214bd83f3  libsystem_pthread.dylib <B37430D8-E3AF-33E4-81E1-FAED9EE26E8A>  /usr/lib/system/libsystem_pthread.dylib
+
+
+Powerstats for:   logd
+UUID:             0A7D40F9-0C37-3ED1-8510-9A53362A3E42
+Path:             /usr/libexec/logd
+Resource Coalition: 92 samples "com.apple.logd"(7)
+On Behalf Of:     6 samples UNKNOWN [1881] (6 samples originated by UNKNOWN [31]), 1 sample SpringBoard [34] (1 sample originated by SpringBoard [34]), 1 sample WeatherWidget [571] (1 sample originated by UNKNOWN [80])
+Architecture:     arm64e
+Start time:       2025-05-17 03:29:28.058 -0700
+End time:         2025-05-17 13:06:10.097 -0700
+Num samples:      92 (6%)
+Primary state:    80 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Utility, Requested Thread QoS Utility, Override Thread QoS Unspecified, e-core
+User Activity:    18 samples Idle, 74 samples Active
+Power Source:     61 samples on Battery, 31 samples on AC
+  92  ??? (libsystem_pthread.dylib + 2732) [0x214bccaac]
+    92  ??? (libsystem_pthread.dylib + 2572) [0x214bcca0c]
+      92  ??? (libdispatch.dylib + 84576) [0x192443a60]
+        92  ??? (libdispatch.dylib + 86492) [0x1924441dc]
+          90  ??? (libdispatch.dylib + 44512) [0x192439de0]
+            83  ??? (libdispatch.dylib + 41680) [0x1924392d0]
+              83  ??? (libdispatch.dylib + 112004) [0x19244a584]
+                83  ??? (libdispatch.dylib + 70328) [0x1924402b8]
+                  83  ??? (logd + 26636) [0x10012a80c]
+                    83  ??? (logd + 38364) [0x10012d5dc]
+                      81  ??? (logd + 47892) [0x10012fb14]
+                        81  ??? (libsystem_kernel.dylib + 28932) [0x1db6ca104]
+                          3   <Effective Thread QoS Default>
+                          1   <Effective Thread QoS User Initiated>
+                          1   <on behalf of WeatherWidget [571] (originated by UNKNOWN [80]), Effective Thread QoS User Initiated, Requested Thread QoS Default>
+                          1   <on behalf of SpringBoard [34] (originated by SpringBoard [34]), Effective Thread QoS User Initiated, Requested Thread QoS Default, p-core>
+                      1   ??? (logd + 47852) [0x10012faec]
+                        1   ??? (libsystem_kernel.dylib + 20680) [0x1db6c80c8]
+                      1   ??? (logd + 47776) [0x10012faa0]
+                        1   ??? (logd + 55004) [0x1001316dc]
+                          1   ??? (logd + 65960) [0x1001341a8]
+                            1   ??? (libsystem_kernel.dylib + 20680) [0x1db6c80c8]
+            6   ??? (libdispatch.dylib + 41884) [0x19243939c]
+              6   ??? (libdispatch.dylib + 112004) [0x19244a584]
+                6   ??? (libdispatch.dylib + 6828) [0x192430aac]
+                  6   ??? (logd + 68288) [0x100134ac0]
+                    6   ??? (logd + 68180) [0x100134a54]
+                      6   ??? (libdispatch.dylib + 71464) [0x192440728]
+                        6   ??? (libdispatch.dylib + 112004) [0x19244a584]
+                          6   ??? (logd + 68560) [0x100134bd0]
+                            6   ??? (libdispatch.dylib + 71464) [0x192440728]
+                              6   ??? (libdispatch.dylib + 112004) [0x19244a584]
+                                3   ??? (logd + 68864) [0x100134d00]
+                                  3   ??? (logd + 47892) [0x10012fb14]
+                                    3   ??? (libsystem_kernel.dylib + 28932) [0x1db6ca104]
+                                      2   <on behalf of UNKNOWN [1881] (originated by UNKNOWN [31]), Effective Thread QoS Background, Requested Thread QoS Background>
+                                      1   <on behalf of UNKNOWN [1881] (originated by UNKNOWN [31]), Requested Thread QoS Background>
+                                3   ??? (logd + 68772) [0x100134ca4]
+                                  3   ??? (logd + 47892) [0x10012fb14]
+                                    3   ??? (libsystem_kernel.dylib + 28932) [0x1db6ca104]
+                                      3   <on behalf of UNKNOWN [1881] (originated by UNKNOWN [31]), Effective Thread QoS Background, Requested Thread QoS Background>
+            1   ??? (libdispatch.dylib + 41272) [0x192439138]
+              1   ??? (libdispatch.dylib + 98336) [0x192447020]
+                1   ??? (libdispatch.dylib + 103240) [0x192448348]
+                  1   ??? (libdispatch.dylib + 25952) [0x192435560]
+                    1   ??? (libdispatch.dylib + 112004) [0x19244a584]
+                      1   ??? (logd + 8780) [0x10012624c]
+                        1   ??? (logd + 8516) [0x100126144]
+                          1   ??? (logd + 9180) [0x1001263dc]
+                            1   ??? (logd + 12748) [0x1001271cc]
+                              1   ??? (logd + 15592) [0x100127ce8]
+                                1   ??? (logd + 14340) [0x100127804]
+                                  1   ??? (logd + 30844) [0x10012b87c]
+                                    1   ??? (logd + 26636) [0x10012a80c]
+                                      1   ??? (logd + 38428) [0x10012d61c]
+                                        1   ??? (logd + 55372) [0x10013184c]
+                                          1   ??? (logd + 59276) [0x10013278c]
+                                            1   ??? (libsystem_kernel.dylib + 20680) [0x1db6c80c8]
+          2   ??? (libdispatch.dylib + 44460) [0x192439dac]
+            2   ??? (libdispatch.dylib + 41680) [0x1924392d0]
+              2   ??? (libdispatch.dylib + 112004) [0x19244a584]
+                2   ??? (libdispatch.dylib + 70328) [0x1924402b8]
+                  2   ??? (logd + 26636) [0x10012a80c]
+                    2   ??? (logd + 38364) [0x10012d5dc]
+                      2   ??? (logd + 47892) [0x10012fb14]
+                        2   ??? (libsystem_kernel.dylib + 28932) [0x1db6ca104]
+
+  Binary Images:
+           0x100124000 -                ???  logd                    <0A7D40F9-0C37-3ED1-8510-9A53362A3E42>  /usr/libexec/logd
+           0x19242f000 -        0x192474b1f  libdispatch.dylib       <395DA84F-715D-334E-8D41-A16CD93FC83C>  /usr/lib/system/libdispatch.dylib
+           0x1db6c3000 -        0x1db6fcebf  libsystem_kernel.dylib  <9E195BE1-1733-345E-A9BF-50D0D7059647>  /usr/lib/system/libsystem_kernel.dylib
+           0x214bcc000 -        0x214bd83f3  libsystem_pthread.dylib <B37430D8-E3AF-33E4-81E1-FAED9EE26E8A>  /usr/lib/system/libsystem_pthread.dylib
