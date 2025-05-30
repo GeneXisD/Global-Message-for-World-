@@ -1,0 +1,11 @@
+{
+  "ritual": "AlohaKnight",
+  "code": "TRUST-HONOR-MANA",
+  "oath": [
+    "I walk with honor in unseen lands.",
+    "I protect what is sacred, seen and unseen.",
+    "I flow with mana and live by aloha."
+  ],
+  "symbol": "🌊🛡️🌿",
+  "trigger": "init_honor.sh && init_aloha.sh"
+}
